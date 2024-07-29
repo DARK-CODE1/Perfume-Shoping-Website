@@ -12,179 +12,197 @@
 
 <body>
     <div class="off-canvas-overlay"></div>
-    <div class="canvas-open">
-        <a href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+
+    <div class="off-canvas-menu off-canvas-two">
+
+        <div class="canvas-open">
+            <a href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div class="off-canvas-menu-wrapper">
+            <div class="canvas-close">
+                <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="header-account">
+                <ul>
+                    <li class="language">
+                        <a href="#"><img src="img/icon/language.png" alt="English"><i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-language">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Germany</a></li>
+                            <li><a href="#">Farsi</a></li>
+                        </ul>
+                    </li>
+                    <li class="currency">
+                        <a href="#">INR <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-currency">
+                            <li><a href="#">EUR - EURO</a></li>
+                            <li><a href="#">GBP - British Pound</a></li>
+                            <li><a href="#">USD - US Dollar</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-links">
+                        <a href="#">My Account <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-links">
+                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Shopping Cart</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-right-info">
+                <ul>
+                    <li class="search-box">
+                        <a href="javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <div class="search-widget">
+                            <form action="#">
+                                <input type="text" placeholder="Search Your Perfume">
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="header-wishlist">
+                        <a href="#"><i class="fa-regular fa-heart" aria-hidden="true"></i>
+                            <span class="item-count">4</span>
+                        </a>
+                    </li>
+                    <li class="mini-cart-wrapper">
+                        <a href="javascript:void(0)"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span class="item-count">2</span>
+                        </a>
+                        <div class="mini-cart mini-cart-2">
+                            <div class="cart-gallery">
+                                <div class="cart-item">
+                                    <div class="cart-img">
+                                        <a href="#"><img src="img/small-product/mini1.png" alt="Perfume"></a>
+                                    </div>
+                                    <div class="cart-info">
+                                        <a href="#">Hugo Boss</a>
+                                        <p><span>Rs. 3640</span> X 1</p>
+                                    </div>
+                                    <div class="cart-remove">
+                                        <a href="#"><i class="fas fa-times"></i></a>
+                                    </div>
+                                </div>
+                                <div class="cart-item">
+                                    <div class="cart-img">
+                                        <a href="#"><img src="img/small-product/mini2.png" alt="Perfume"></a>
+                                    </div>
+                                    <div class="cart-info">
+                                        <a href="#">Bvlgari</a>
+                                        <p><span>Rs. 8350</span> X 1</p>
+                                    </div>
+                                    <div class="cart-remove">
+                                        <a href="#"><i class="fas fa-times"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-cart-table">
+                                <div class="cart-table-border">
+                                    <div class="cart-total">
+                                        <span>Sub Total : </span>
+                                        <span class="price">Rs. 11990</span>
+                                    </div>
+                                    <div class="cart-total mt-10">
+                                        <span>Total : </span>
+                                        <span class="price">Rs. 11990</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-cart-footer">
+                                <div class="cart-button"><a href="#">Veiw Cart</a></div>
+                                <div class="cart-button"><a href="#">Checkout</a></div>
+                            </div>
+                        </div>
+                        <!-- mini cart end -->
+                    </li>
+                </ul>
+            </div>
+            <div id="menu" class="text-left">
+                <ul class="off-canvas-main-menu">
+                    <li class="menu-item-has-children active">
+                        <a href="#">Home</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Man</a></li>
+                            <li><a href="#">Woman</a></li>
+                            <li><a href="#">Unisex</a></li>
+                            <li><a href="#">Kids</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Brand</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item-has-children">
+                                <a href="#">Men</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Versace</a></li>
+                                    <li><a href="#">Hugo Boss</a></li>
+                                    <li><a href="#">Jaguar</a></li>
+                                    <li><a href="#">Armani</a></li>
+                                    <li><a href="#">Paco Rabbane</a></li>
+                                    <li><a href="#">Ralph Lauren</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Women</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Bvlgari</a></li>
+                                    <li><a href="#">Coach</a></li>
+                                    <li><a href="#">Kenzo</a></li>
+                                    <li><a href="#">D&G</a></li>
+                                    <li><a href="#">Jean Paul Gaultier</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Unisex</a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Ajmal</a></li>
+                                    <li><a href="#">Calvin Klein</a></li>
+                                    <li><a href="#">The Body Shop</a></li>
+                                    <li><a href="#">Lattafa</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Social Media</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">My Account</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">User</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Log in</a></li>
+                            <li><a href="#">Sign up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="off-canvas-footer">
+                <span><a href="#"><i class="fa fa-envelope-o" aria-hidden="true">default@gmial.com</i></a></span>
+                <ul>
+                    <li class="facebook"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="pinterest"><a href="#"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="linkedin"><a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="fa-brands fa-google-plus" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="off-canvas-menu-wrapper">
-        <div class="canvas-close">
-            <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
-        </div>
-        <div class="header-account">
-            <ul>
-                <li class="language">
-                    <a href="#"><img src="img/icon/language.png" alt="English"><i class="fa fa-angle-down"></i></a>
-                    <ul class="dropdown-language">
-                        <li><a href="#">English</a></li>
-                        <li><a href="#">Germany</a></li>
-                        <li><a href="#">Farsi</a></li>
-                    </ul>
-                </li>
-                <li class="currency">
-                    <a href="#">INR <i class="fa fa-angle-down"></i></a>
-                    <ul class="dropdown-currency">
-                        <li><a href="#">EUR - EURO</a></li>
-                        <li><a href="#">GBP - British Pound</a></li>
-                        <li><a href="#">USD - US Dollar</a></li>
-                    </ul>
-                </li>
-                <li class="top-links">
-                    <a href="#">My Account <i class="fa fa-angle-down"></i></a>
-                    <ul class="dropdown-links">
-                        <li><a href="#">Checkout</a></li>
-                        <li><a href="#">My Account</a></li>
-                        <li><a href="#">Shopping Cart</a></li>
-                        <li><a href="#">Wishlist</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="header-right-info">
-            <ul>
-                <li class="search-box">
-                    <a href="javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
-                    <div class="search-widget">
-                        <form action="#">
-                            <input type="text" placeholder="Search Your Perfume">
-                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                        </form>
-                    </div>
-                </li>
-                <li class="header-wishlist">
-                    <a href="#"><i class="fa-regular fa-heart" aria-hidden="true"></i>
-                        <span class="item-count">4</span>
-                    </a>
-                </li>
-                <li class="mini-cart-wrapper">
-                    <a href="javascript:void(0)"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        <span class="item-count">2</span>
-                    </a>
-                    <div class="mini-cart mini-cart-2">
-                        <div class="cart-gallery">
-                            <div class="cart-item">
-                                <div class="cart-img">
-                                    <a href="#"><img src="img/small-product/mini1.png" alt="Perfume"></a>
-                                </div>
-                                <div class="cart-info">
-                                    <a href="#">Hugo Boss</a>
-                                    <p><span>Rs. 3640</span> X 1</p>
-                                </div>
-                                <div class="cart-remove">
-                                    <a href="#"><i class="fas fa-times"></i></a>
-                                </div>
-                            </div>
-                            <div class="cart-item">
-                                <div class="cart-img">
-                                    <a href="#"><img src="img/small-product/mini2.png" alt="Perfume"></a>
-                                </div>
-                                <div class="cart-info">
-                                    <a href="#">Bvlgari</a>
-                                    <p><span>Rs. 8350</span> X 1</p>
-                                </div>
-                                <div class="cart-remove">
-                                    <a href="#"><i class="fas fa-times"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mini-cart-table">
-                            <div class="cart-table-border">
-                                <div class="cart-total">
-                                    <span>Sub Total : </span>
-                                    <span class="price">Rs. 11990</span>
-                                </div>
-                                <div class="cart-total mt-10">
-                                    <span>Total : </span>
-                                    <span class="price">Rs. 11990</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mini-cart-footer">
-                            <div class="cart-button"><a href="#">Veiw Cart</a></div>
-                            <div class="cart-button"><a href="#">Checkout</a></div>
-                        </div>
-                    </div>
-                    <!-- mini cart end -->
-                </li>
-            </ul>
-        </div>
-        <div id="menu" class="text-left">
-            <ul class="off-canvas-main-menu">
-                <li class="menu-item-has-children active">
-                    <a href="#">Home</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Man</a></li>
-                        <li><a href="#">Woman</a></li>
-                        <li><a href="#">Unisex</a></li>
-                        <li><a href="#">Kids</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">Brand</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item-has-children">
-                            <a href="#">Men</a>
-                            <ul class="sub-menu">
-                                <li><a href="#">Versace</a></li>
-                                <li><a href="#">Hugo Boss</a></li>
-                                <li><a href="#">Jaguar</a></li>
-                                <li><a href="#">Armani</a></li>
-                                <li><a href="#">Paco Rabbane</a></li>
-                                <li><a href="#">Ralph Lauren</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a href="#">Women</a>
-                            <ul class="sub-menu">
-                                <li><a href="#">Bvlgari</a></li>
-                                <li><a href="#">Coach</a></li>
-                                <li><a href="#">Kenzo</a></li>
-                                <li><a href="#">D&G</a></li>
-                                <li><a href="#">Jean Paul Gaultier</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item-has-children">
-                            <a href="#">Unisex</a>
-                            <ul class="sub-menu">
-                                <li><a href="#">Ajmal</a></li>
-                                <li><a href="#">Calvin Klein</a></li>
-                                <li><a href="#">The Body Shop</a></li>
-                                <li><a href="#">Lattafa</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">Blog</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Newsletter</a></li>
-                        <li><a href="#">Social Media</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">My Account</a>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">About Us</a>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="#">User</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Log in</a></li>
-                        <li><a href="#">Sign up</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
