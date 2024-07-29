@@ -128,7 +128,19 @@ body {
     color: #fff;
 }
 
-.off-canvas-menu-wrapper
+.off-canvas-menu-wrapper{
+    width: 290px;
+    position: fixed;
+    background: #fff;
+    z-index: 99;
+    top: 0;
+    height: 100vh;
+    transition: 0.5s;
+    left: 0;
+    margin-left: -300px;
+    padding: 50px 15px 30px;
+    overflow-y: hidden;
+}
 a {
     text-decoration: none;
 }
