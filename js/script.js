@@ -22,28 +22,50 @@ $(function () {
 
   $offcanvasNavSubMenu.slideUp();
 
-  $offcanvasNav.on('click', 'li a,li .menu-expand', function (e) {
+  $offcanvasNav.on('click', 'li a, li .menu-expand', function (e) {
     let $this = $(this);
-    if ($this
+    if (
+      $this
       .parent()
       .attr('class')
-      .match(/\b('menu-item-has-children'|'has-children'|'has-sub-menu')\b/) &&
-      ($this.attr('herf') === '#' || $this.hasClass('menu-expand'))
+      .match(/\b(menu-item-has-children | has-children | has-sub-menu)\b/) &&
+      ($this.attr('href') === '#' || $this.hasClass('menu-expand'))
     ) {
       e.preventDefault();
       if ($this.siblings('ul:visible').length) {
         $this.siblings('ul').slideUp('slow');
       } else {
-        $this.closet('li').siblings('li').find('ul:visible').slideUp('slow');
+        $this.closest('li').siblings('li').find('ul:visible').slideUp('slow');
         $this.siblings('ul').slideDown('slow');
       }
     }
+
     if (
-      $this.is('a') ||
-      $this.is('span') ||
-      $this.attr('class').match(/\b('menu-item-has-children')\b/)
+      $this.is("a") ||
+      $this.is("span") ||
+      $this.attr("class").match(/\b(menu-expand)\b/)
     ) {
-      $this.toggleClass('menu-open');
+      $this.parent().toggleClass("menu-open");
+    } else if (
+      $this.is("li") &&
+      $this.attr("class").match(/\b('menu-item-has-children')\b/)
+    ) {
+      $this.toggleClass("menu-open");
     }
+  });
+
+  // Search Box SlideToggle
+
+  $(".search_box > a").on("click", function () {
+    $(this).toggleClass('active');
+    $('.search_widget').slideToggle("medium");
+  });
+
+  // Mini Cart SlideToggle
+  $(".mini_cart_wrapper > a").on("click", function () {
+    if ($(window).width() < 991) {
+      $('.mini_cart').slideToggle("medium");
+    }
+
   });
 });
