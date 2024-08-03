@@ -538,11 +538,11 @@ img {
 }
 
 .offcanvas_main_menu>li.menu-item-has-children.menu-open>span.menu-expand {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .offcanvas_main_menu>li ul li.menu-item-has-children.menu-open span.menu-expand {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .offcanvas_main_menu li {
@@ -614,31 +614,120 @@ h6 {
     margin-top: 0;
 }
 
-h1{
+h1 {
     font-size: 48px;
     line-height: 1;
     font-weight: 700;
 }
-h2{
+
+h2 {
     font-size: 36px;
     line-height: 36px;
 }
-h3{
+
+h3 {
     font-size: 30px;
     line-height: 30px;
 }
-h4{
+
+h4 {
     font-size: 16px;
     line-height: 19px;
     font-weight: 700;
 }
-h5{
+
+h5 {
     font-size: 14px;
     line-height: 18px;
 }
-h6{
+
+h6 {
     font-size: 12px;
     line-height: 14px;
+}
+
+.offcanvas_footer {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.offcanvas_footer span a {
+    font-size: 16px;
+}
+
+.offcanvas_footer span a:hover {
+    color: #f6692a;
+}
+
+.offcanvas_footer ul {
+    margin-top: 20px;
+}
+
+.offcanvas_footer ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.offcanvas_footer ul li:last-child {
+    margin-right: 0;
+}
+
+.offcanvas_footer ul li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #fff;
+}
+
+.offcanvas_footer ul li.facebook a {
+    background: #3c5b9b;
+}
+
+.offcanvas_footer ul li.twitter a {
+    background: #1da1f2;
+}
+
+.offcanvas_footer ul li.pinterest a {
+    background: #bd081b;
+}
+
+.offcanvas_footer ul li.linkedin a {
+    background: #242492;
+}
+
+.offcanvas_footer ul li.google-plus a {
+    background: #2af645;
+
+}
+
+.offcanvas_footer ul li.facebook a:hover {
+    background: #f6692a;
+
+}
+
+.offcanvas_footer ul li.twitter a:hover {
+    background: #f6692a;
+
+}
+
+.offcanvas_footer ul li.pinterest a:hover {
+    background: #f6692a;
+
+}
+
+.offcanvas_footer ul li.linkedin a:hover {
+    background: #f6692a;
+
+}
+
+.offcanvas_footer ul li.google-plus a:hover {
+    background: #f6692a;
+
 }
 
 /*=============== End Of Genral Style  ===============*/

@@ -28,7 +28,7 @@ $(function () {
       $this
       .parent()
       .attr('class')
-      .match(/\b(menu-item-has-children | has-children | has-sub-menu)\b/) &&
+      .match(/\b(menu-item-has-children| has-children | has-sub-menu)\b/) &&
       ($this.attr('href') === '#' || $this.hasClass('menu-expand'))
     ) {
       e.preventDefault();
