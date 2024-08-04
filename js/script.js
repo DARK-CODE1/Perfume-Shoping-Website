@@ -3,11 +3,11 @@ $(function () {
 
   // canvas menu activasion
 
-  $(".canvas_open").on("click", function () {
+  $(".canvas_open").on("click", () => {
     $(".offcanvas_menu_wrapper,.offcanvas_overlay").addClass("active");
   });
 
-  $(".canvas_close,.offcanvas_overlay").on("click", function () {
+  $(".canvas_close,.offcanvas_overlay").on("click", () => {
     $(".offcanvas_menu_wrapper,.offcanvas_overlay").removeClass("active");
   });
 
@@ -56,16 +56,29 @@ $(function () {
 
   // Search Box SlideToggle
 
-  $(".search_box > a").on("click", function () {
+  $(".search_box > a").on("click", () => {
     $(this).toggleClass('active');
     $('.search_widget').slideToggle("medium");
   });
 
   // Mini Cart SlideToggle
-  $(".mini_cart_wrapper > a").on("click", function () {
+  $(".mini_cart_wrapper > a").on("click", () => {
     if ($(window).width() < 991) {
       $('.mini_cart').slideToggle("medium");
     }
 
   });
+
+  // Sticky Header
+
+  $(window).on('scroll', () => {
+    let scroll = $(window).scrollTop();
+    if (scroll < 500) {
+      $('.sticky-header').removeClass('sticky');
+    } else {
+      $('.sticky-header').addClass('sticky');
+    }
+  })
+
+  
 });
