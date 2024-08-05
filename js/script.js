@@ -80,5 +80,34 @@ $(function () {
     }
   })
 
-  
+
+  // Slider
+  function dataBackgroundImage() {
+    $("[data-bgimg]").each(function () {
+      let bgImgUrl = $(this).data('bgimg');
+      $(this).css({
+        'background-image': 'url(' + bgImgUrl + ')',
+      });
+    });
+  }
+
+  $(window).on('load', function () {
+    dataBackgroundImage();
+  });
+
+  $('.slider_area').owlCarousel({
+    animateOut: 'fadeOut',
+    autoplay: 'true',
+    autoplayTimeout: 5000,
+    loop: 'true',
+    nav: 'true',
+    items: 1,
+    dots: 'false',
+    navText: [
+      '<i class="fa fa-arrow-left"></i>',
+      '<i class="fa fa-arrow-right"></i>',
+    ],
+  });
+
+
 });
