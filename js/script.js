@@ -97,17 +97,59 @@ $(function () {
 
   $('.slider_area').owlCarousel({
     animateOut: 'fadeOut',
-    autoplay: 'true',
+    autoplay: true,
     autoplayTimeout: 5000,
-    loop: 'true',
-    nav: 'true',
+    loop: true,
+    nav: true,
     items: 1,
-    dots: 'false',
+    dots: false,
     navText: [
       '<i class="fa fa-arrow-left"></i>',
       '<i class="fa fa-arrow-right"></i>',
     ],
   });
 
+  // Service Section Slider
 
+  $('.product_column4').on('changed.owl.carousel initialized.owl.carousel', function (event) {
+    $(event.target)
+      .find('.owl-item')
+      .removeClass('last')
+      .eq(event.item.index + event.page.size - 1)
+      .addClass('last');
+  }).owlCarousel({
+    autoplay: false,
+    autoplayTimeout: 5000,
+    loop: true,
+    nav: true,
+    items: 4,
+    dots: false,
+    navText: [
+      '<i class="fa fa-arrow-left"></i>',
+      '<i class="fa fa-arrow-right"></i>',
+    ],
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+      992: {
+        items: 4,
+      },
+    }
+  });
+
+
+  // Tooltip Activation
+  $('.action_links ul li a,.add_to_cart a,.footer_social_link ul li a').tooltip({
+    animated: 'fade',
+    placement: 'top',
+    container: 'body',
+  });
 });

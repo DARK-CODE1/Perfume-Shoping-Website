@@ -1032,6 +1032,7 @@ h6 {
     left: auto;
 }
 
+/* slider */
 .slider_section2 .slider_section {
     width: 990px;
 }
@@ -1189,7 +1190,6 @@ h6 {
     transition: 0.3s;
 }
 
-
 .slider_area .owl-nav div:hover {
     color: #f6692a;
     border-color: #f6692a;
@@ -1200,11 +1200,300 @@ h6 {
     left: auto;
 }
 
-
 /*=============== End Of Header ===============*/
 
-
 /*=============== Services ===============*/
+.section_title {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 55px;
+    position: relative;
+}
+
+.section_title::before {
+    width: 27%;
+    height: 2px;
+    content: '';
+    background: #444444;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.section_title h2 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0 20px;
+    text-transform: uppercase;
+    background: #fff;
+    position: relative;
+}
+
+.product_tab_btn {
+    margin-top: 20px;
+}
+
+.product_tab_btn ul {
+    justify-content: center;
+}
+
+.product_tab_btn ul li {
+    margin-right: 45px;
+}
+
+.product_tab_btn ul li:last-child {
+    margin-right: 0;
+}
+
+.product_tab_btn ul li a {
+    font-size: 13px;
+    line-height: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+}
+
+.product_tab_btn ul li a:hover {
+    color: #f6692a;
+}
+
+.product_tab_btn ul li a.active {
+    color: #f6692a;
+}
+
+.tab-content>.tab-pane.active {
+    display: block;
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+}
+
+.tab-content>.tab-pane {
+    display: block;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.product_carousel .product_thumb a img {
+    width: inherit;
+    margin: 0 auto;
+}
+
+
+.product_carousel:hover .owl-nav div {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product_carousel .owl-nav.disabled {
+    display: block;
+}
+
+.product_carousel .col-lg-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.product_carousel .owl-nav div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    line-height: 43px;
+    text-align: center;
+    border: 1px solid #a2a2a2;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+}
+
+.product_carousel .owl-nav div:hover {
+    color: #fff;
+    background: #f6692a;
+    border-color: #f6692a;
+}
+
+.product_carousel .owl-nav div.owl-next {
+    right: 0;
+    left: auto;
+}
+
+.single_product:hover .action_links {
+    opacity: 1;
+    visibility: visible;
+}
+
+.single_product:hover .action_links ul li a {
+    transform: translateX(0);
+}
+
+.single_product:hover .product_thumb::before {
+    opacity: 1;
+}
+
+.single_product:hover .product_thumb a.secondary_img {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product_thumb {
+    position: relative;
+}
+
+.product_thumb a.secondary_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s;
+}
+
+.product_thumb::before {
+    background: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    content: '';
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+.action_links {
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+}
+
+.action_links ul li {
+    margin-bottom: 10px;
+}
+
+.action_links ul li:last-child {
+    margin-bottom: 0;
+}
+
+.action_links ul li a {
+    line-height: 38px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #000;
+    color: #000;
+    display: block;
+    transition: all 0.3s ease;
+    transform: translateX(-60px);
+}
+
+
+.action_links ul li a:hover {
+    color: #f6692a;
+    background: #000000;
+}
+
+.action_links ul li.wishlist a {
+    transition: all 0.5s ease;
+}
+
+.action_links ul li.compare a {
+    transition: all 0.7s ease;
+}
+
+.action_links ul li.quick_button a {
+    transition: all 0.9s ease;
+}
+
+.product_content {
+    margin-top: 19px;
+    overflow: hidden;
+}
+
+.product_content h4 {
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.product_content h4 a:hover {
+    color: #f6692a;
+}
+
+.product_rating {
+    float: right;
+}
+
+.product_rating ul {
+    display: flex;
+}
+
+.product_rating ul li {
+    line-height: 23px;
+    margin-right: 3px;
+}
+
+.product_rating ul li:last-child {
+    margin-right: 0;
+}
+
+.product_rating ul li a {
+    font-size: 12px;
+}
+
+.product_rating ul li a:hover {
+    color: #f6692a;
+}
+
+.price_box {
+    float: left;
+}
+
+.price_box span {
+    line-height: 16px;
+}
+
+.price_box span.old_price {
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.price_box span.current_price {
+    font-weight: 700;
+    font-size: 17px;
+    color: #000;
+}
+
+
 /*=============== End Of Services ===============*/
 
 
@@ -1458,6 +1747,56 @@ h6 {
 
     .slider_area .owl-nav div {
         display: none;
+    }
+
+    .section_title {
+        margin-bottom: 25px;
+    }
+
+    .section_title::before {
+        width: 93%;
+        top: 10px;
+    }
+
+    .section_title h2 {
+        font-size: 20px;
+        line-height: 20px;
+        padding: 0 15px;
+    }
+
+    .product_tab_btn {
+        margin-top: 12px;
+    }
+
+    .product_tab_btn ul li {
+        margin-right: 20px;
+    }
+
+    .product_carousel .product_thumb a img {
+        width: 100%;
+    }
+
+    .product_carousel .owl-nav div {
+        display: none;
+    }
+
+    .product_thumb a img {
+        width: 100%;
+    }
+
+    .action_links ul li a {
+        line-height: 34px;
+        width: 33px;
+        height: 33px;
+        font-size: 18px;
+    }
+
+    .price_box span.old_price {
+        font-size: 13px;
+    }
+
+    .price_box span.current_price {
+        font-size: 13px;
     }
 }
 
