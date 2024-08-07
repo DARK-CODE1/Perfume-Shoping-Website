@@ -1496,9 +1496,109 @@ figure {
 
 /*=============== End Of Services ===============*/
 
+/*=============== Banner ===============*/
+.banner_area {
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
 
-/*=============== Portfolio ===============*/
-/*=============== End Of Portfolio ===============*/
+.mb-66 {
+    margin-bottom: 66px;
+}
+
+
+.banner_thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner_thumb:hover::before {
+    width: 90%;
+}
+
+.banner_thumb:hover::after {
+    height: 90%;
+}
+
+.banner_thumb::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 90%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 0.5s ease;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.banner_thumb::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 0;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 0.5s ease;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.banner_thumb a img {
+    transition: all 0.3;
+}
+
+.banner_content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.banner_content h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 19px;
+}
+
+.banner_content h2 {
+    font-size: 72px;
+    line-height: 72px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.banner_content p {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.banner_content p span {
+    display: block;
+}
+
+/*=============== End Of Banner ===============*/
 
 
 /*=============== About Me ===============*/
@@ -1798,6 +1898,39 @@ figure {
     .price_box span.current_price {
         font-size: 13px;
     }
+
+    .banner_area {
+        margin-bottom: 27px;
+    }
+
+    .single_banner {
+        margin-bottom: 30px;
+    }
+
+    .banner_thumb a {
+        width: 100%;
+    }
+
+    .banner_thumb a img {
+        width: 100%;
+    }
+
+    .banner_content h3 {
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 7px;
+    }
+
+    .banner_content h2 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 6px;
+    }
+
+    .banner_content p {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1975,6 +2108,20 @@ figure {
         height: 380px;
         background-position: 55%;
     }
+
+    .banner_content h3 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .banner_content h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .banner_content p {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width:1199px) {
@@ -2051,6 +2198,16 @@ figure {
 
     .single_slider {
         height: 470px;
+    }
+
+    .banner_content h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .banner_content h2 {
+        font-size: 50px;
+        line-height: 50px;
     }
 }
 
