@@ -1707,18 +1707,147 @@ figure {
 }
 
 /*=============== End Of Hot Deals ===============*/
+/*=============== Sidebar Product ===============*/
+.small_product_area .product_content h4 a {
+    color: #000;
+}
 
+.small_product_area .product_content h4 a:hover {
+    color: #f6692a;
+}
 
+.small_product_area .product_rating ul li a {
+    color: #000;
+}
+
+.small_product_area .product_rating ul li a:hover {
+    color: #f6692a;
+}
+
+.small_product_area .price_box span {
+    color: #000;
+}
+
+.small_product_contianer .single_product {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.small_product_contianer .single_product:last-child {
+    margin-bottom: 0;
+}
+
+.small_product_contianer .product_content {
+    width: 73%;
+    padding-left: 15px;
+    margin-top: 0;
+    float: left;
+}
+
+.small_product_contianer .product_content h4 {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 12px;
+}
+
+.small_product_contianer .product_content h4 a {
+    color: #000;
+}
+
+.small_product_contianer .product_content h4 a:hover {
+    color: #f6692a;
+}
+
+.small_product_contianer .product_thumb {
+    width: 70px;
+    float: left;
+}
+
+.small_product_contianer .product_rating {
+    float: inherit;
+    margin-bottom: 7px;
+    width: 100%;
+}
+
+.small_product_contianer .product_rating ul li a {
+    color: #000;
+}
+
+.small_product_contianer .product_rating ul li a:hover {
+    color: #f6692a;
+}
+
+.small_product_contianer .price_box span {
+    color: #bdbdbd;
+    font-size: 13px;
+}
+
+.small_product_contianer .price_box span.current_price {
+    color: #000;
+    font-weight: 800;
+}
+
+.sidebar_product_column1 .product_thumb {
+    width: 90px;
+}
+
+.sidebar_product_column1 .product_content {
+    width: 65%;
+}
+
+/*=============== End Of Sidebar Product ===============*/
+
+/*=============== Testimonials ===============*/
+.testimonial_style_two .section_title_style2::before {
+    background: #000000;
+}
+
+.testimonial_style_two .section_title_style2 h2 {
+    color: #000;
+    background: inherit;
+}
+
+.testimonial_content h4 {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.testimonial_content h4 a {
+    color: #000;
+}
+
+.testimonial_content h4 a:hover {
+    color: #f6692a;
+}
+
+.testimonial_content p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #000;
+    margin: 30px auto 0;
+    text-align: justify;
+}
+
+.testimonial_sidebar_carousel .testimonial_img a img{
+    width: inherit;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.single_testimonial{
+    text-align: center;
+}
+/*=============== End Of Testimonials ===============*/
 /*=============== Records ===============*/
 /*=============== End Of Records ===============*/
 
 
 /*=============== Blog ===============*/
 /*=============== End Of Blog ===============*/
-
-
-/*=============== Testimonials ===============*/
-/*=============== End Of Testimonials ===============*/
 
 
 /*=============== Contact ===============*/
@@ -2062,6 +2191,32 @@ figure {
         padding: 0 0 15px;
     }
 
+    .small_product_area {
+        margin-bottom: 58px;
+    }
+
+    .small_product_contianer .product_content {
+        width: 73%;
+        padding-left: 12px;
+    }
+
+    .small_product_contianer .product_thumb {
+        width: 54px;
+    }
+
+    .testimonial_style_two {
+        margin-bottom: 50px;
+    }
+
+    .testimonial_content h4 {
+        margin-top: 22px;
+    }
+
+    .testimonial_content p{
+        font-size: 13px;
+        line-height: 23px;
+        margin: 18px auto 0;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2257,6 +2412,10 @@ figure {
     .home_section_left {
         margin-bottom: 65px;
     }
+
+    .small_product_contianer .product_content {
+        width: 67%;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width:1199px) {
@@ -2362,6 +2521,19 @@ figure {
     .countdown_number {
         line-height: 22px;
         font-size: 13px;
+    }
+
+    .small_product_contianer .product_content {
+        width: 66%;
+    }
+
+    .sidebar_product_column1 .product_thumb {
+        width: 70px;
+    }
+
+    .sidebar_product_column1 .product_content {
+        width: 67%;
+        padding-left: 10px;
     }
 }
 

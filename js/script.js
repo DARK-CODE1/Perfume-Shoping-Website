@@ -200,4 +200,54 @@ $(function () {
   });
 
 
+
+
+  // sidebar product Slider
+  $('.sidebar_product_column1').on('changed.owl.carousel initialized.owl.carousel', function (event) {
+    $(event.target)
+      .find('.owl-item')
+      .removeClass('last')
+      .eq(event.item.index + event.page.size - 1)
+      .addClass('last');
+  }).owlCarousel({
+    autoplay: false,
+    autoplayTimeout: 5000,
+    loop: true,
+    nav: true,
+    items: 4,
+    dots: false,
+    navText: [
+      '<i class="fa fa-arrow-left"></i>',
+      '<i class="fa fa-arrow-right"></i>',
+    ],
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+        margin: 30,
+      },
+      992: {
+        items: 1,
+      },
+    }
+  });
+
+
+
+  $('.testimonial_sidebar_carousel').owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 5000,
+    loop: true,
+    nav: true,
+    items: 1,
+    dots: false,
+    navText: [
+      '<i class="fa fa-arrow-left"></i>',
+      '<i class="fa fa-arrow-right"></i>',
+    ],
+  });
+
 });
