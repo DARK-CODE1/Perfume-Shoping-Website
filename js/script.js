@@ -109,7 +109,7 @@ $(function () {
     ],
   });
 
-  // Service Section Slider
+  // Product Section Slider
 
   $('.product_column4').on('changed.owl.carousel initialized.owl.carousel', function (event) {
     $(event.target)
@@ -152,4 +152,52 @@ $(function () {
     placement: 'top',
     container: 'body',
   });
+
+  // Hot Deals Activation
+  $('.product_column1').on('changed.owl.carousel initialized.owl.carousel', function (event) {
+    $(event.target)
+      .find('.owl-item')
+      .removeClass('last')
+      .eq(event.item.index + event.page.size - 1)
+      .addClass('last');
+  }).owlCarousel({
+    autoplay: false,
+    autoplayTimeout: 5000,
+    loop: true,
+    nav: true,
+    items: 4,
+    dots: false,
+    navText: [
+      '<i class="fa fa-arrow-left"></i>',
+      '<i class="fa fa-arrow-right"></i>',
+    ],
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      992: {
+        items: 1,
+      },
+    }
+  });
+
+
+  // Countdwon Activation
+  $('[data-countdown').each(function () {
+    let $this = $(this),
+      finalDate = $(this).data('countdown');
+    $this.countdown(finalDate, function (event) {
+      $this.html(
+        event.strftime(
+          '<div class="countdown_area"><div class="single_countdown"><div class="countdown_number">%D</div><div class="countdown_title">days</div></div><div class="single_countdown"><div class="countdown_number">%H</div><div class="countdown_title">Hours</div></div><div class="single_countdown"><div class="countdown_number">%M</div><div class="countdown_title">mins</div></div><div class="single_countdown"><div class="countdown_number">%S</div><div class="countdown_title">secs</div></div></div>'
+        )
+      );
+    });
+  });
+
+
 });
