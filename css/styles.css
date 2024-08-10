@@ -1824,7 +1824,7 @@ figure {
     color: #f6692a;
 }
 
-.testimonial_content p{
+.testimonial_content p {
     font-size: 15px;
     line-height: 25px;
     color: #000;
@@ -1832,30 +1832,190 @@ figure {
     text-align: justify;
 }
 
-.testimonial_sidebar_carousel .testimonial_img a img{
+.testimonial_sidebar_carousel .testimonial_img a img {
     width: inherit;
     display: inline-block;
     border-radius: 50%;
 }
 
-.single_testimonial{
+.single_testimonial {
     text-align: center;
 }
-/*=============== End Of Testimonials ===============*/
-/*=============== Records ===============*/
-/*=============== End Of Records ===============*/
 
+/*=============== End Of Testimonials ===============*/
+/*=============== Newsletter ===============*/
+.newsletter_style2 {
+    background: inherit;
+    padding: 0;
+}
+
+.newsletter_style2 .subscibe_form form {
+    position: relative;
+    width: 100%;
+}
+
+.newsletter_style2 .subscibe_form form input {
+    width: 100%;
+    padding: 0 60px 0 15px;
+    color: #000;
+    opacity: 0.7;
+}
+
+.newsletter_style2 .subscibe_form form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #f6692a;
+    padding: 0;
+    width: 48px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.newsletter_style2 .subscibe_form form button:hover {
+    color: #000000;
+}
+
+.newsletter_style2 .newsletter_content {
+    text-align: left;
+}
+
+.newsletter_style2 .newsletter_content p {
+    color: #000;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.subscibe_form {
+    margin-top: 32px;
+}
+
+.subscibe_form form input {
+    width: 448px;
+    border: 1px solid #c4c4c4;
+    background: none;
+    padding: 0 15px;
+    font-size: 13px;
+    height: 52px;
+    color: #444444;
+}
+
+.subscibe_form form button {
+    padding: 0 20px;
+    background: #fff;
+    font-size: 13px;
+    font-weight: 70;
+    text-transform: uppercase;
+    line-height: 52px;
+    height: 52px;
+    border: 0;
+    display: block;
+    transition: 0.4s;
+    margin-left: 15px;
+}
+
+.subscibe_form form button:hover {
+    color: #fff !important;
+    background: #000;
+}
+
+/*=============== End Of Newsletter ===============*/
 
 /*=============== Blog ===============*/
+.blog_two {
+    background: #f8f8f8;
+    padding: 65px 0 64px;
+    margin-bottom: 0;
+}
+
+.blog_carousel:hover .owl-nav div {
+    opacity: 1;
+    visibility: visible;
+}
+
+.blog_carousel .owl-nav.disabled {
+    display: block;
+}
+
+.blog_carousel .owl-nav div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    line-height: 43px;
+    text-align: center;
+    border: 1px solid #a2a2a2;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+}
+
+.blog_carousel .owl-nav div:hover {
+    background: #f6692a;
+    border-color: #f6692a;
+    color: #fff;
+}
+
+.blog_carousel .owl-nav div.owl-next {
+    right: 0;
+    left: auto;
+}
+
+.blog_carousel .col-lg-3 {
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+.blog_content {
+    padding-top: 25px;
+}
+
+.blog_content p.post_desc {
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.blog_content h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 20px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.blog_content h4 a:hover{
+    color: #f6692a;
+}
+
+.blog_content .btn_more {
+    margin-top: 15px;
+}
+
+.blog_content .btn_more a{
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.blog_content .btn_more a:hover{
+    color: #f6692a;
+}
+.blog_section .section_title h2{
+    background: #f8f8f8;
+}
+
 /*=============== End Of Blog ===============*/
-
-
-/*=============== Contact ===============*/
-/*=============== End Of Contact ===============*/
-
-
-/*=============== Hire me ===============*/
-/*=============== End Of Hire me ===============*/
 
 /*=============== Footer ===============*/
 /*=============== End Of Footer ===============*/
@@ -2212,10 +2372,63 @@ figure {
         margin-top: 22px;
     }
 
-    .testimonial_content p{
+    .testimonial_content p {
         font-size: 13px;
         line-height: 23px;
         margin: 18px auto 0;
+    }
+
+    .newsletter_style2 {
+        margin-bottom: 0;
+    }
+
+    .subscibe_form {
+        margin-top: 24px;
+    }
+
+    .subscibe_form form input {
+        width: 190px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .subscibe_form form button {
+        padding: 0 8px;
+        font-size: 12px;
+        line-height: 36px;
+        height: 40px;
+        margin-left: 8px;
+        letter-spacing: 0;
+    }
+
+    .blog_two {
+        padding: 55px 0 54px;
+    }
+
+    .blog_carousel .owl-nav div {
+        display: none;
+    }
+
+    .blog_content {
+        padding-top: 14px;
+    }
+
+    .blog_content p.post_desc {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .blog_content h4 {
+        font-size: 13px;
+        margin-bottom: 7px;
+    }
+
+    .blog_content .btn_more {
+        margin-top: 5px;
+    }
+
+    .blog_section{
+        margin-bottom: 54px;
     }
 }
 
@@ -2416,6 +2629,15 @@ figure {
     .small_product_contianer .product_content {
         width: 67%;
     }
+
+    .subscibe_form form input {
+        height: 40px;
+    }
+
+    .subscibe_form form button {
+        line-height: 36px;
+        height: 40px;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width:1199px) {
@@ -2534,6 +2756,10 @@ figure {
     .sidebar_product_column1 .product_content {
         width: 67%;
         padding-left: 10px;
+    }
+
+    .blog_content h4 {
+        font-size: 14px;
     }
 }
 

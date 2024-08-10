@@ -236,10 +236,10 @@ $(function () {
   });
 
 
-
+  // Testimonial Slider
   $('.testimonial_sidebar_carousel').owlCarousel({
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 12000,
     loop: true,
     nav: true,
     items: 1,
@@ -250,4 +250,66 @@ $(function () {
     ],
   });
 
+
+  // New product Slider
+  $('.product_column3').on('changed.owl.carousel initialized.owl.carousel', function (event) {
+    $(event.target)
+      .find('.owl-item')
+      .removeClass('last')
+      .eq(event.item.index + event.page.size - 1)
+      .addClass('last');
+  }).owlCarousel({
+    autoplay: false,
+    autoplayTimeout: 5000,
+    loop: true,
+    nav: true,
+    items: 4,
+    dots: false,
+    navText: [
+      '<i class="fa fa-arrow-left"></i>',
+      '<i class="fa fa-arrow-right"></i>',
+    ],
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+      992: {
+        items: 3,
+      },
+    }
+  });
+
+
+    // New product Slider
+    $('.blog_column3').owlCarousel({
+      autoplay: false,
+      autoplayTimeout: 5000,
+      loop: true,
+      nav: true,
+      items: 4,
+      dots: false,
+      navText: [
+        '<i class="fa fa-arrow-left"></i>',
+        '<i class="fa fa-arrow-right"></i>',
+      ],
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        768: {
+          items: 2,
+        },
+        992: {
+          items: 3,
+        },
+      }
+    });
 });
