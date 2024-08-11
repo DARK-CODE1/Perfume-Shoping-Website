@@ -1728,61 +1728,61 @@ figure {
     color: #000;
 }
 
-.small_product_contianer .single_product {
+.small_product_container .single_product {
     margin-bottom: 20px;
     overflow: hidden;
 }
 
-.small_product_contianer .single_product:last-child {
+.small_product_container .single_product:last-child {
     margin-bottom: 0;
 }
 
-.small_product_contianer .product_content {
+.small_product_container .product_content {
     width: 73%;
     padding-left: 15px;
     margin-top: 0;
     float: left;
 }
 
-.small_product_contianer .product_content h4 {
+.small_product_container .product_content h4 {
     font-size: 14px;
     line-height: 14px;
     margin-bottom: 12px;
 }
 
-.small_product_contianer .product_content h4 a {
+.small_product_container .product_content h4 a {
     color: #000;
 }
 
-.small_product_contianer .product_content h4 a:hover {
+.small_product_container .product_content h4 a:hover {
     color: #f6692a;
 }
 
-.small_product_contianer .product_thumb {
+.small_product_container .product_thumb {
     width: 70px;
     float: left;
 }
 
-.small_product_contianer .product_rating {
+.small_product_container .product_rating {
     float: inherit;
     margin-bottom: 7px;
     width: 100%;
 }
 
-.small_product_contianer .product_rating ul li a {
+.small_product_container .product_rating ul li a {
     color: #000;
 }
 
-.small_product_contianer .product_rating ul li a:hover {
+.small_product_container .product_rating ul li a:hover {
     color: #f6692a;
 }
 
-.small_product_contianer .price_box span {
-    color: #bdbdbd;
+.small_product_container .price_box span {
+    color: #959494;
     font-size: 13px;
 }
 
-.small_product_contianer .price_box span.current_price {
+.small_product_container .price_box span.current_price {
     color: #000;
     font-weight: 800;
 }
@@ -1992,7 +1992,7 @@ figure {
     font-weight: 700;
 }
 
-.blog_content h4 a:hover{
+.blog_content h4 a:hover {
     color: #f6692a;
 }
 
@@ -2000,7 +2000,7 @@ figure {
     margin-top: 15px;
 }
 
-.blog_content .btn_more a{
+.blog_content .btn_more a {
     font-size: 12px;
     line-height: 20px;
     text-transform: uppercase;
@@ -2008,16 +2008,107 @@ figure {
     font-weight: 700;
 }
 
-.blog_content .btn_more a:hover{
+.blog_content .btn_more a:hover {
     color: #f6692a;
 }
-.blog_section .section_title h2{
+
+.blog_section .section_title h2 {
     background: #f8f8f8;
 }
 
 /*=============== End Of Blog ===============*/
 
 /*=============== Footer ===============*/
+.footer_widgets {
+    background: #1c1d22;
+}
+
+.footer_top {
+    padding: 67px 0 68px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer_logo {
+    margin-bottom: 31px;
+}
+
+.contact_us>p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #bdbdbd;
+    margin-bottom: 10px;
+}
+
+.contact_us>p a:hover {
+    color: #f6692a;
+}
+
+.footer_desc {
+    margin-bottom: 20px;
+}
+
+.footer_desc p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #bdbdbd;
+}
+
+.footer_menu ul li a {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    color: #bdbdbd;
+}
+
+.footer_menu ul li a:hover {
+    color: #f6692a;
+}
+
+.widgets_container h3 {
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+
+.footer_widgets .small_product_list .product_content a,
+.footer_widgets .small_product_list .product_content .price_box .current_price {
+    color: #fff;
+}
+
+.footer_link {
+    padding: 20px 0;
+}
+
+.footer_link ul li {
+    display: inline-block;
+    margin-right: 24px;
+    padding-right: 24px;
+    border-right: 1px solid #414141;
+}
+
+.footer_link ul li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+}
+
+.footer_link ul li a {
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.footer_link ul li a:hover {
+    color: #f6692a;
+}
+
 /*=============== End Of Footer ===============*/
 
 /*=============== Responsive ===============*/
@@ -2246,10 +2337,7 @@ figure {
         margin-bottom: 25px;
     }
 
-    .section_title::before {
-        width: 93%;
-        top: 10px;
-    }
+
 
     .section_title h2 {
         font-size: 20px;
@@ -2355,12 +2443,12 @@ figure {
         margin-bottom: 58px;
     }
 
-    .small_product_contianer .product_content {
+    .small_product_container .product_content {
         width: 73%;
         padding-left: 12px;
     }
 
-    .small_product_contianer .product_thumb {
+    .small_product_container .product_thumb {
         width: 54px;
     }
 
@@ -2427,8 +2515,52 @@ figure {
         margin-top: 5px;
     }
 
-    .blog_section{
+    .blog_section {
         margin-bottom: 54px;
+    }
+
+    .footer_top {
+        padding: 58px 0 5px;
+    }
+
+    .widgets_container {
+        margin-bottom: 45px;
+    }
+
+    .footer_logo a img {
+        max-width: 126px;
+    }
+
+    .contact_us {
+        margin-bottom: 50px;
+    }
+
+    .footer_desc {
+        margin-bottom: 20px;
+    }
+
+    .footer_desc p {
+        line-height: 25px;
+    }
+
+    .footer_menu ul li a {
+        line-height: 32px;
+    }
+
+    .widgets_container h3 {
+        font-size: 13px;
+        line-height: 22px;
+        margin-bottom: 12px;
+    }
+
+    .footer_link ul li {
+        margin-right: 12px;
+        padding-right: 12px;
+        line-height: 24px;
+    }
+
+    .footer_link ul li a {
+        letter-spacing: 0;
     }
 }
 
@@ -2626,7 +2758,7 @@ figure {
         margin-bottom: 65px;
     }
 
-    .small_product_contianer .product_content {
+    .small_product_container .product_content {
         width: 67%;
     }
 
@@ -2638,6 +2770,19 @@ figure {
         line-height: 36px;
         height: 40px;
     }
+
+    .footer_top {
+        padding: 70px 0 17px;
+    }
+
+    .widgets_container {
+        margin-bottom: 52px;
+    }
+
+    .widgets_container h3 {
+        margin-bottom: 20px;
+    }
+
 }
 
 @media only screen and (min-width: 992px) and (max-width:1199px) {
@@ -2745,7 +2890,7 @@ figure {
         font-size: 13px;
     }
 
-    .small_product_contianer .product_content {
+    .small_product_container .product_content {
         width: 66%;
     }
 
